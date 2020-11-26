@@ -30,7 +30,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/home_recyclerView"
-        android:layout_gravity="">
+        android:layout_margin="10dp"
+        android:scrollbars="horizontal">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="리뷰쓰러 가기"/>
+
+
 </LinearLayout>

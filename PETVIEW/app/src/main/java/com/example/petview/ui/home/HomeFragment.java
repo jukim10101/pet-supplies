@@ -35,6 +35,8 @@ public class HomeFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        items = new ArrayList<>();
         initDataSet();
         Context context = root.getContext();
         RecyclerView recyclerView = (RecyclerView) root.findViewById(R.id.home_recyclerView);
@@ -52,8 +54,10 @@ public class HomeFragment extends Fragment {
 
     private void initDataSet() {
         items.clear();
-        items.add(new HomeRankingData("고양이 모래", "12,000원", "1. ", R.drawable.cat));
-        items.add(new HomeRankingData("고양이 스크래", "12,000원", "2. ", R.drawable.cat));
-        items.add(new HomeRankingData("고양이 장난감", "12,000원", "3. ", R.drawable.cat));
+        items.add(new HomeRankingData("고양이 털실 장난감", "12,000원", "1. ", R.drawable.catwool));
+        items.add(new HomeRankingData("고양이 장난감", "12,000원", "2. ", R.drawable.cattoy));
+        items.add(new HomeRankingData("고양이 영양 사료", "12,000원", "3. ", R.drawable.catfood));
+        System.out.println(items);
     }
+
 }
